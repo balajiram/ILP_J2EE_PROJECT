@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left" >
+
+    <Button
+        android:id="@+id/createProfile_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewprofile_picture_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp"
+        android:text="Create Profile" />
+
+    <TextView
+        android:id="@+id/viewprofile_daypoints_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/viewprofile_daypoints_lbl"
+        android:layout_alignBottom="@+id/viewprofile_daypoints_lbl"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:padding="15dp"
+        android:text="50" />
+
+    <TextView
+        android:id="@+id/viewprofile_weekpoints_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewprofile_weekpoints_lbl"
+        android:layout_alignLeft="@+id/viewprofile_daypoints_txt"
+        android:padding="15dp"
+        android:text="50" />
+
+    <TextView
+        android:id="@+id/viewprofile_mail_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewprofile_name_lbl"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@+id/viewprofile_picture_img"
+        android:text="Mail: someone@domain.in" />
+
+    <TextView
+        android:id="@+id/viewprofile_weekpoints_lbl"
+        style="android:textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewprofile_daypoints_lbl"
+        android:layout_below="@+id/viewprofile_daypoints_txt"
+        android:padding="10dp"
+        android:text="Total points of the week"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/viewprofile_name_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/viewprofile_picture_img"
+        android:layout_toRightOf="@+id/viewprofile_picture_img"
+        android:text="Name: MYNAME" />
+
+    <TextView
+        android:id="@+id/view_profile_phone_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewprofile_picture_img"
+        android:layout_alignLeft="@+id/viewprofile_mail_lbl"
+        android:text="Phone: *********" />
+
+    <Button
+        android:id="@+id/viewprofile_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewprofile_location_lbl"
+        android:layout_toLeftOf="@+id/view_profile_phone_lbl"
+        android:text="Edit profile" />
+
+    <RatingBar
+        android:id="@+id/viewprofile_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/viewprofile_daypoints_txt"
+        android:layout_below="@+id/viewprofile_edit_btn"
+        android:isIndicator="false"
+        android:numStars="4"
+        android:stepSize=".1" />
+
+    <TextView
+        android:id="@+id/viewprofile_daypoints_lbl"
+        style="android:textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewprofile_picture_img"
+        android:layout_below="@+id/viewprofile_ratingBar"
+        android:padding="10dp"
+        android:text="Total points of the day"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/viewprofile_picture_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:minHeight="75dp"
+        android:minWidth="75dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/viewprofile_location_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_profile_phone_lbl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Location: My Location" />
+
+</RelativeLayout>
