@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/view_profile_phone_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/createprofile_name_txt"
+        android:layout_marginTop="20dp"
+        android:text="Mail" />
+
+    <EditText
+        android:id="@+id/createprofile_mail_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/view_profile_phone_lbl"
+        android:layout_alignBottom="@+id/view_profile_phone_lbl"
+        android:layout_alignLeft="@+id/createprofile_name_txt"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/createprofile_phone_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createprofile_mail_txt"
+        android:layout_below="@+id/createprofile_mail_txt"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="25dp"
+        android:text="Location" />
+
+    <EditText
+        android:id="@+id/createprofile_location_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignLeft="@+id/createprofile_phone_txt"
+        android:ems="10" />
+
+    <ImageView
+        android:id="@+id/createprofile_picture_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/createprofile_save_btn"
+        android:layout_alignRight="@+id/createprofile_location_txt"
+        android:layout_marginBottom="14dp"
+        android:layout_marginRight="18dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/createprofile_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/TextView02"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="30dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/createprofile_phone_txt"
+        android:layout_alignLeft="@+id/view_profile_phone_lbl"
+        android:text="Phone no" />
+
+    <Button
+        android:id="@+id/createprofile_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView03"
+        android:layout_below="@+id/createprofile_location_txt"
+        android:layout_marginTop="53dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/createprofile_upload_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/createprofile_picture_img"
+        android:layout_below="@+id/createprofile_picture_img"
+        android:gravity="center_vertical|center_horizontal|left|fill|start"
+        android:minHeight="24dip"
+        android:text="upload" />
+
+</RelativeLayout>
